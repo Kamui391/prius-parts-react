@@ -1,0 +1,29 @@
+{
+  "name": "prius-parts-react",
+  "version": "1.0.0",
+  "description": "Prius машины эд ангийн үнийн лавлах (React)",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && npm run check:locales && npm run images && vite build",
+    "preview": "vite preview --outDir docs",
+    "validate": "node tools/validateData.js",
+    "check:locales": "node tools/checkLocales.js",
+    "placeholders": "node tools/makePlaceholders.js",
+    "images": "node tools/buildImages.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "bulma": "^1.0.4",
+    "sass": "^1.106.1",
+    "vite": "^5.4.21"
+  },
+  "private": true,
+  "type": "module"
+}
